@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap 4 Sidebar Menu Responsive with Sub menu  Create Responsive Side Navigation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+</head>
+<body>
+ 
+<!-- Vertical navbar -->
+<div class="vertical-nav bg-white" id="mysidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <div class="media d-flex align-items-center">
+      <img loading="lazy" src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="..." width="80" height="80" class="mr-3 rounded-circle img-thumbnail shadow-sm">
+      <div class="media-body">
+        <h4 class="m-0">Abhishek</h4>
+        <p class="font-weight-normal text-muted mb-0">Web developer</p>
+      </div>
+    </div>
+  </div>
+<div id="title_div">
+  <p class="text-gray font-weight-bold text-uppercase px-3 small  mb-0">Dashboard</p><hr>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+   
+      <a  class="nav-link text-dark bg-light" routerLink="/layout/myprofile/mainprofile">
+                <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
+                Dashboard
+            </a>
+    </li>
+  
+    <li class="nav-item">
+      <a  class="nav-link text-dark bg-light" routerLink="/layout/myprofile/mainprofile">                <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                Profile
+            </a>
+    </li>
+    <li class="nav-item">
+      <a  class="nav-link text-dark bg-light" routerLink="/layout/fun">
+        <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
+                Other
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark">
+                <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
+                View User
+            </a>
+    </li>
+  </ul>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small  mb-0">Title</p>
+  <hr>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+
+      <a routerLink="/common/footer" class="nav-link text-dark">
+                <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                area charts
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark">
+                <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                bar charts
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark">
+                <i class="fa fa-pie-chart mr-3 text-primary fa-fw"></i>
+                pie charts
+            </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link text-dark">
+                <i class="fa fa-line-chart mr-3 text-primary fa-fw"></i>
+                line charts
+            </a>
+    </li>
+  </ul>
+</div>
+ 
+</div>
+<!-- End vertical navbar -->
+
+
+<!-- Page content holder -->
+<div class="page-content" id="content" style="color: black;">
+  <div id="mynav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
+  <!-- Toggle button -->
+
+  
+<div id="route_container">
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum necessitatibus pariatur, quis veniam dolorum, omnis earum ipsa at tempora nostrum expedita, ab sequi maxime distinctio rerum dicta laborum. Dignissimos esse hic, repudiandae non aut, earum debitis nostrum ipsum possimus, molestias sit atque? Laborum in quod voluptatem veritatis placeat nihil obcaecati cupiditate facilis doloremque ducimus repellat non quidem rem nemo amet harum sint, ea magni expedita inventore nam nisi rerum. Quidem at, possimus commodi architecto fugiat eos tempora quisquam beatae ullam tempore similique alias, pariatur blanditiis ratione quod rem itaque est repellat tenetur quos earum, in fuga! Dolorem, nobis sunt tempora eum ducimus fuga quibusdam, consequuntur ipsam aspernatur id, error ipsa consectetur quaerat officia! Sit eos possimus inventore. Blanditiis ipsum repudiandae dignissimos veniam, dolorem provident eum iusto eveniet neque officia? Quia expedita consequatur placeat, sint rem temporibus voluptatibus possimus ab molestias id excepturi error optio, architecto culpa facere officia. Placeat neque sapiente nobis vitae sint enim atque voluptatem doloremque mollitia aliquid dolore soluta totam ea quas tempore temporibus, eveniet commodi voluptatibus quisquam quos repudiandae beatae ex! Autem atque quasi neque possimus voluptatibus sint voluptates quod, vitae, perferendis fuga ex unde eius quo asperiores ab eum! Architecto nihil numquam itaque veniam optio accusamus rerum. Porro optio aliquam tenetur assumenda beatae sapiente illum? Laudantium, dolores impedit adipisci in ex non quis dolorum eos enim? Ex, odit architecto corporis saepe qui accusamus quia, sint molestiae recusandae maxime deserunt eos nihil explicabo molestias repellat dolores nobis veritatis similique iusto aliquid ab perferendis. Earum omnis odio odit culpa sunt. Asperiores, voluptatem quisquam iste exercitationem assumenda unde sunt laboriosam nam veniam rem iusto! Tenetur, quisquam minus consequuntur aspernatur minima, vero aliquid ducimus saepe natus quo quibusdam incidunt dicta illo. Fuga dolorum velit asperiores, voluptatem dicta rerum unde dolores molestiae? Impedit sit expedita saepe omnis quis, delectus fugiat officiis aspernatur culpa alias numquam sunt illum amet illo nobis cum rerum esse? Aperiam, praesentium fuga. Nemo molestias voluptatem perspiciatis labore natus possimus earum adipisci, quidem error nisi, neque explicabo cupiditate commodi omnis libero necessitatibus quas sint. Possimus delectus saepe, ratione, perferendis cumque voluptatem ea, repudiandae reiciendis asperiores ipsum architecto illum nesciunt rerum suscipit pariatur quaerat quos eos. Dolor pariatur repellendus asperiores facere aliquid, repellat eum reiciendis? Porro distinctio aspernatur cupiditate quasi dolorum inventore, incidunt neque nihil dignissimos repellendus adipisci maxime quidem. Sit unde odio aliquid libero ab amet tempore doloribus quia. Accusamus tempora facere amet modi quod, officiis quidem?</h1>
+<button id="main" onclick="openNav()"> Click</button>
+ 
+
+  <router-outlet></router-outlet>
+  
+</div>
+
+  <!-- Demo content -->
+
+</div>
+End demo content
+
+<script>
+  function openNav() {
+    document.getElementById("mysidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  
+</script>
+
+</body>
+
+</html>
+
+
